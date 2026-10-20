@@ -20,7 +20,7 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           context: .
-          file: ./demo/Dockerfile
+          file: ./demo/Containerfile
           tags: registry.cunarist.org/rinf-demo:latest
           push: true
           cache-from: type=gha
@@ -41,7 +41,7 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           context: .
-          file: ./documentation/Dockerfile
+          file: ./documentation/Containerfile
           tags: registry.cunarist.org/rinf-docs:latest
           push: true
           cache-from: type=gha
